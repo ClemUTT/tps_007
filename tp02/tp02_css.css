@@ -18,6 +18,7 @@ a:hover{
 
 ol{
     color: chocolate;
+    list-style-type: lower-alpha;
 }
 
 .cs{
