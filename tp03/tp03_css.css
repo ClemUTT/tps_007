@@ -4,6 +4,10 @@
     width: 90%;
 }
 
+.text-left{
+    text-align: left !important;
+}
+
 img{
     width: 40%;
 }
