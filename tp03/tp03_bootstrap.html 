@@ -52,13 +52,15 @@
         </div>
     </div>
 
-    <div class="btn-group " role="group">
-        <button type="button" class="btn btn-default"><a href="">TCBR</a></button>
-        <button type="button" class="btn btn-default"><a href="">FIL</a></button>
-        <button type="button" class="btn btn-default"><a href="">Capsules</a></button>
-        <button type="button" class="btn btn-default"><a href="">TPE</a></button>
-        <button type="button" class="btn btn-default"><a href="">Stages</a></button>
-        <button type="button" class="btn btn-default"><a href="">SE</a></button>
+    <div class="panel visible-lg-inline-block">
+        <div class="btn-group " role="group">
+            <button type="button" class="btn btn-default"><a href="">TCBR</a></button>
+            <button type="button" class="btn btn-default"><a href="">FIL</a></button>
+            <button type="button" class="btn btn-default"><a href="">Capsules</a></button>
+            <button type="button" class="btn btn-default"><a href="">TPE</a></button>
+            <button type="button" class="btn btn-default"><a href="">Stages</a></button>
+            <button type="button" class="btn btn-default"><a href="">SE</a></button>
+        </div>
     </div>
 
 
@@ -70,7 +72,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="panel visible-lg-inline-block">
         <button class="btn btn-success" type="button">
             ATN
         </button>
@@ -91,55 +93,61 @@
 
 
     <h4>Grille de 3 colonnes (lg-4)</h4>
-    <div class="row">
-        <div class="col-lg-4">
-            <p>Col 1</p>
-        </div>
-        <div class="col-lg-4">
-            <p>Col 2</p>
-        </div>
-        <div class="col-lg-4">
-            <p>Col 3</p>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 text-left">
+                <p>Col 1</p>
+            </div>
+            <div class="col-lg-4 text-left">
+                <p>Col 2</p>
+            </div>
+            <div class="col-lg-4 text-left">
+                <p>Col 3</p>
+            </div>
         </div>
     </div>
 
-    <h4 class="glyphicon-bold">Grille de 2 et 3 colonnes</h4>
-    <div class="row">
-        <div class="col-lg-2">
-            <p>1 of 2</p>
+    <h4>Grille de 2 et 3 colonnes</h4>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 text-left">
+                <p>1 of 2</p>
+            </div>
+            <div class="col-lg-4 text-left">
+                <p>2 of 2</p>
+            </div>
         </div>
-        <div class="col-lg-2">
-            <p>2 of 2</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-2">
-            <p>1 of 3</p>
-        </div>
-        <div class="col-lg-2">
-            <p>2 of 3</p>
-        </div>
-        <div class="col-lg-4">
-            <p>3 of 3</p>
+        <div class="row">
+            <div class="col-lg-2 text-left">
+                <p>1 of 3</p>
+            </div>
+            <div class="col-lg-4 text-left">
+                <p>2 of 3</p>
+            </div>
+            <div class="col-lg-4 text-left">
+                <p>3 of 3</p>
+            </div>
         </div>
     </div>
 
     <h4>Grille de l'exercice 4 du TP Web 02</h4>
-    <div class="row">
-        <div class="col-lg-4">1</div>
-        <div class="col-lg-6">Boite 1</div>
-        <div class="col-lg-2"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5"></div>
+            <div class="col-lg-6">Boite 1</div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">Boite 2</div>
+            <div class="col-lg-4">Bimage</div>
+            <div class="col-lg-4">Boite 3</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1">Boite 4</div>
+            <div class="col-lg-3">Boite 5</div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-lg-4">Boite 2</div>
-        <div class="col-lg-4">Bimage</div>
-        <div class="col-lg-4">Boite 3</div>
-    </div>
-    <div class="row">
-        <div class="col-lg-2">Boite 4</div>
-        <div class="col-lg-3">Boite 5</div>
-    </div>
-
 
     <div class="panel panel-info">
         <div class="panel-heading">Utilisation de card avec une image</div>
@@ -153,7 +161,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-3">
                 <div class="row"><img class="img-responsive" src="atn.png" alt=""></div>
                 <div class="row">
                     <div class="col-lg-12">ATN</div>
@@ -161,7 +169,8 @@
                 <div class="row"><p>Accompagnement de la Transformation Numérique : permet de comprendre comment, grâce
                     au SI, on peut ajouter de la valeur à la plupart des activités de l'organisation</p></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
                 <div class="row"><img class="img-responsive" src="ipl.png" alt=""></div>
                 <div class="row">
                     <div class="col-lg-12">IPL</div>
@@ -170,7 +179,8 @@
                     logiciels en équipe depuis la preuve de concept jusqu'à l'industrialisation de la production
                     logicielle.</p></div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
                 <div class="row"><img src="vdc.png" alt=""></div>
                 <div class="row">
                     <div class="col-lg-12">VDC</div>
@@ -183,68 +193,158 @@
     </div>
 
 
-    <div class="container-fluid">
-        <div class="panel panel-danger">
-            <div class="panel-heading">Utilisation de tableaux</div>
-            <div class="panel-body">
-                Due to the widespread use of tables across third-party widgets like calendars and date pickers, we've
-                designed our tables to be opt-in. Just add the base class .table to any table, then extend with custom
-                styles or our various included modifier classes.
+    <div class="panel panel-danger">
+        <div class="panel-heading">Utilisation de tableaux</div>
+        <div class="panel-body">
+            Due to the widespread use of tables across third-party widgets like calendars and date pickers, we've
+            designed our tables to be opt-in. Just add the base class .table to any table, then extend with custom
+            styles or our various included modifier classes.
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>#</th>
+            <th>ATN</th>
+            <th>IPL</th>
+            <th>VDC</th>
+        </tr>
+        <tr class="table">
+            <th>CS</th>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF09</button>
+                    <button class="text-left btn btn-default">IF22</button>
+                </div>
+            </td>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF05</button>
+                    <button class="text-left btn btn-default">IF10</button>
+                </div>
+            </td>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF17</button>
+                    <button class="text-left btn btn-default">IF29</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>TM</th>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF20</button>
+                    <button class="text-left btn btn-default">IF34</button>
+                </div>
+            </td>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF26</button>
+                    <button class="text-left btn btn-default">IF31</button>
+                    <button class="text-left btn btn-default">LO10</button>
+                </div>
+            </td>
+            <td>
+                <div class="visible-lg-block btn-group-vertical" role="group">
+                    <button class="text-left btn btn-default">IF28</button>
+                    <button class="text-left btn btn-default">IF34</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">Utilisation de formulaire</div>
+        <div class="panel-body">
+            Bootstrap nous offre de nombreuses classes pour nous permettre de structurer nos formulaires et
+            d'ajouter des styles aux différents éléments des formulaires.
+        </div>
+    </div>
+
+    <form action="">
+        <div class="form-group">
+            <label for="nom">Nom ?</label>
+            <input type="text" class="form-control" id="nom" placeholder="Donnez votre nom">
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom ?</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Donnez votre prénom">
+        </div>
+        <div class="form-group">
+            <label for="email">Nom ?</label>
+            <input type="email" class="form-control" id="email" placeholder="Donnez votre Email">
+        </div>
+        <div class="form-group">
+            <label for="ddn">Date de naissance ?</label>
+            <input type="date" class="form-control" id="ddn" placeholder="jj/mm/aaaa" min="01/01/1800"
+                   max="01/01/2020">
+        </div>
+
+        <label>Sexe ?</label>
+        <div class="form-group">
+            <label class="radio-inline">
+                <input type="radio" name="sexe"> Masculin
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sexe"> Féminin
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="nom">Validations ?</label>
+            <div class="checkbox">
+                <label for="st07">
+                    <input type="checkbox" class="" id="st07"> ST07
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label for="st09">
+                    <input type="checkbox" class="" id="st09"> ST09
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label for="st10">
+                    <input type="checkbox" class="disabled" id="st10" disabled> ST10 (désactivté)
+                </label>
+            </div>
+
+            <div class="checkbox disabled">
+                <label for="se" class="disabled">
+                    <input type="checkbox" class="disabled" id="se"> SE
+                </label>
             </div>
         </div>
 
-        <table class="table table-bordered">
-            <tr>
-                <th>#</th>
-                <th>ATN</th>
-                <th>IPL</th>
-                <th>VDC</th>
-            </tr>
-            <tr>
-                <th>CS</th>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF09</button>
-                        <button class="text-left btn btn-default">IF22</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF05</button>
-                        <button class="text-left btn btn-default">IF10</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF17</button>
-                        <button class="text-left btn btn-default">IF29</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>TM</th>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF20</button>
-                        <button class="text-left btn btn-default">IF34</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF26</button>
-                        <button class="text-left btn btn-default">IF31</button>
-                        <button class="text-left btn btn-default">LO10</button>
-                    </div>
-                </td>
-                <td>
-                    <div class="visible-lg-block btn-group-vertical" role="group">
-                        <button class="text-left btn btn-default">IF28</button>
-                        <button class="text-left btn btn-default">IF34</button>
-                    </div>
-                </td>
-            </tr>
-        </table>
-    </div>
+
+        <div class="form-group">
+            <label for="modules">Modules ?</label>
+            <select size="9" multiple name="" id="modules" class="form-control">
+                <optgroup label="CS">
+                    <option value="gl02">GL02</option>
+                    <option value="gl02">NF16</option>
+                    <option value="gl02">NF20</option>
+                </optgroup>
+                <optgroup label="TM">
+                    <option value="if09">IF09</option>
+                    <option value="if14">IF14</option>
+                    <option value="lo02">LO02</option>
+                    <option value="nf21">NF21</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="infos">Informations complémentaires</label>
+            <textarea class="form-control rounded-0" name="" id="infos" cols="30" rows="3">
+
+                </textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit form</button>
+    </form>
 
 
 </div>
