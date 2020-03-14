@@ -1,7 +1,15 @@
 .container{
     margin-top: 80px;
-    background-color: lemonchiffon;
     width: 90%;
+}
+
+nav>a {
+  color: white
+}
+
+body{
+
+  background-color: lemonchiffon;
 }
 
 .text-left{
