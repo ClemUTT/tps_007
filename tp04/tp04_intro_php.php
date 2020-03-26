@@ -6,6 +6,25 @@
 </head>
   <body>
 
+  <script>
+      window.onload = function(){
+          var navElements = document.getElementsByClassName("navbar-nav")[0].getElementsByTagName("li");
+
+          for (var i=0; i < navElements.length; i++){
+              navElements[i].firstChild.addEventListener('click', function(e) {
+                  e.preventDefault();
+                  var exX = document.getElementById(e["currentTarget"].getAttribute("href").substr(1)).offsetTop;
+                  window.scrollTo({
+                      top: exX - navElements[0].offsetHeight,
+                      behavior: 'smooth'
+                  });
+              });
+          }
+
+      }
+
+  </script>
+
   <?php
 
     //exo 2
