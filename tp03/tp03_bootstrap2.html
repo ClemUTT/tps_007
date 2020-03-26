@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>TP03</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="tp03_css.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <a class="navbar-brand">Module LO07</a>
+        <a class="navbar-text">TCBR</a>
+        <a class="navbar-text">Fillières</a>
+        <a class="navbar-text">Capsules</a>
+        <a class="navbar-text">TPE</a>
+        <a class="navbar-text">Stages</a>
+        <a class="navbar-text">SE</a>
+    </nav>
+
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            <div class="panel-title">Utilisation d'un jumbotron</div>
+        </div>
+        <div class="panel-body">
+            Le jumbotron affiche un bloc en haut d'une page web, avec pour objectif d'attirer l'attention de
+            l'utilisateur sur un élément particulier. Le jumbotron est un composant de Bootstrap. Il affiche un bloc
+            situé en haut de la page d'un site
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1>Programme ISI de l'UTT</h1>
+        <p>Le programme ISI de L'UTT dispose actuellement de trois filières : MPL, MSI et MCS</p>
+    </div>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Mis en place d'une pagination</div>
+        </div>
+        <div class="panel-body">Provide pagination links for your site or app with the multi-page pagination component,
+            or the simpler pager alternative.
+        </div>
+    </div>
+    <nav aria-label="Pagination UTT">
+        <ul class="pagination">
+            <li><a href="#">TCBR</a></li>
+            <li><a href="#">FIL</a></li>
+            <li><a href="#">Capsuled</a></li>
+            <li><a href="#">TPE</a></li>
+            <li><a href="#">Stages</a></li>
+            <li><a href="#">SE</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Mise en place de boutons équipés de badges</div>
+        </div>
+        <div class="panel-body">Easily highlight new or unread items by adding a to links, Bootstrap navs, and more.
+        </div>
+    </div>
+    <button class="btn btn-success" type="button">
+        ATN <span class="badge">42</span>
+    </button>
+    <button class="btn btn-danger" type="button">
+        IPL <span class="badge">420</span>
+    </button>
+    <button class="btn btn-warning" type="button">
+        VDC <span class="badge">0</span>
+    </button>
+    <br>
+    <br>
+    <br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Mise en place de grilles de présentations</div>
+        </div>
+        <div class="panel-body">Les grilles ont super pratiques et très simples d'utilisation dans bootstrap !</div>
+    </div>
+
+    <h2>Grille 1</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">Col 1</div>
+            <div class="col-lg-4">Col 2</div>
+            <div class="col-lg-4">Col 3</div>
+        </div>
+    </div>
+    <br>
+    <h2>Grille 2</h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">1 of 2</div>
+            <div class="col-lg-8">2 of 2</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">1 of 3</div>
+            <div class="col-lg-4">2 of 3</div>
+            <div class="col-lg-6">3 of 3</div>
+        </div>
+    </div>
+
+    <br>
+    <h2>Grille 3</h2>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">Compétences</div>
+            <div class="col-lg-2">débutant</div>
+            <div class="col-lg-2">apprenti</div>
+            <div class="col-lg-2">confirmé</div>
+            <div class="col-lg-2">expert</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">Html</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"> x</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">CSS</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"> x</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">Python</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"> x</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">Java</div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2"> x</div>
+            <div class="col-lg-2"></div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">Utilisation de card avec une image</div>
+            </div>
+            <div class="panel-body">Card est cool pour mettre des images dedans !</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/atn.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ATN</h5>
+                        <p class="card-text">Accompagnement de la transformation numérique</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/IPL.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">IPL</h5>
+                        <p class="card-text">Inovation par le logiciel </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/VDC.PNG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">VDC</h5>
+                        <p class="card-text">Valorisation des données et des connaissances</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">Utilisation du tableau</div>
+            </div>
+            <div class="panel-body">Les tableaux c'est pratique, et c'est plus joli qu'une grosse grille</div>
+        </div>
+        <div class="panel panel-default">
+            <table class="table">
+                <tr>
+                    <th scope="col"> #</th>
+                    <th scope="col"> ATN</th>
+                    <th scope="col"> IPL</th>
+                    <th scope="col"> VDC</th>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2"> CS</th>
+                    <td> IF09</td>
+                    <td> IF05</td>
+                    <td> IF17</td>
+                </tr>
+                <tr>
+                    <td> IF22</td>
+                    <td> IF10</td>
+                    <td> IF29</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="3"> TM</th>
+                    <td> IF20</td>
+                    <td> IF26</td>
+                    <td> IF28</td>
+                </tr>
+                <tr>
+                    <td> IF34</td>
+                    <td> IF31</td>
+                    <td> IF34</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> LO10</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <div class="panel-title">Utilisation du formulaire</div>
+            </div>
+            <div class="panel-body">Les formulaire ça nous rapporte des données, et on aime ça !</div>
+        </div>
+        <form class="" role="search" id="form" >
+            <div class="form-group">
+                <label>Nom ?</label></p>
+                <input type="text" class="form-control" placeholder="Entrez votre nom"></p>
+                <label>Prénom ?</label></p>
+                <input type="text" class="form-control" placeholder="Entrez votre prénom"></p>
+                <label>Email ?</label></p>
+                <input type="text" class="form-control" placeholder="Entrez votre Email"></p>
+                <label>Date de naissance ?</label></p>
+                <input type="date" class="form-control" placeholder="jj/mm/aaaa"></p>
+                <label>Sexe ?</label></p>
+                <input type="radio" class="form-control " name="sexe" value="m">Masculin
+                <input type="radio" class="form-control " name="sexe" value="f">Feminin</p>
+                <label>Origine des étudiants</label></p>
+                <select name="Origine des étudiants" class="form-control">
+                    <option value="TC">TC de l'UTT</option>
+                    <option value="info">DUT INFO</option>
+                    <option value="ge2i">DUT GE2I</option>
+                    <option value="stid">DUT STID</option>
+                    <option value="autre">DUT autre</option>
+                    <option value="scienti">Prépa scientifique</option>
+                    <option value="b/l">Prépa B/L</option>
+                </select></p>
+                <div class="form-group">
+                    <label>Validations ?</label>
+                    <div class="checkbox">
+                        <label for="st07">
+                            <input type="checkbox" class="" id="st07"> ST07
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="st09">
+                            <input type="checkbox" class="" id="st09"> ST09
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="st10">
+                            <input type="checkbox" class="disabled" id="st10" disabled> ST10 (désactivté)
+                        </label>
+                    </div>
+
+                    <div class="checkbox disabled">
+                        <label for="se" class="disabled">
+                            <input type="checkbox" class="disabled" id="se"> SE
+                        </label>
+                    </div>
+                </div>
+                <label>Modules ?</label></p>
+                <select name="CS" multiple="" class="form-control" size="9">
+                    <optgroup label="CS">
+                        <option value="gl02">GL02</option>
+                        <option value="nf16">NF16</option>
+                        <option value="nf20">NF20</option>
+                    </optgroup>
+                    <optgroup label="TM">
+                        <option value="if09">IF09</option>
+                        <option value="if14">IF14</option>
+                        <option value="lo02">LO02</option>
+                        <option value="nf21">NF21</option>
+                    </optgroup>
+                </select></p>
+                <label>Informations complémentaires</label></p>
+                <textarea class="form-control" size="6"></textarea>
+            </div>
+            <br>
+            </p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+    </div>
+
+</body>
+</html>
