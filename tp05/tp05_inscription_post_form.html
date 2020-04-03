@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>tp05</title>
+</head>
+<body>
+
+<div class="panel panel-success">
+    <form action="tp05_inscription_post_form_action.php" method="post">
+        <div class="form-group">
+            <label for="nom">Nom ?</label>
+            <input name="nom" type="text" class="form-control" value="Plantier" id="nom" placeholder="Donnez votre nom">
+        </div>
+        <div class="form-group">
+            <label for="prenom">Prénom ?</label>
+            <input name="prenom" type="text" class="form-control" value="Clément" id="prenom" placeholder="Donnez votre prénom">
+        </div>
+        <div class="form-group">
+            <label for="email">Email ?</label>
+            <input name="email" type="email" class="form-control" value="clement.plantier@utt.fr" id="email" placeholder="Donnez votre Email">
+        </div>
+        <div class="form-group">
+            <label for="ddn">Date de naissance ?</label>
+            <input name="ddn" type="date" value="1999-10-08" class="form-control" id="ddn" placeholder="jj/mm/aaaa" min="01/01/1800" max="01/01/2020">
+        </div>
+
+        <label>Sexe ?</label>
+        <div class="form-group">
+            <label class="radio-inline">
+                <input checked type="radio" name="sexe" value="M"> Masculin
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sexe" value="F"> Féminin
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="modules">Origine des étudiants</label>
+            <select size="1" name="origine" id="ori" class="form-control">
+                <option>TC de l'UTT</option>
+                <option>DUT INFO</option>
+                <option>DUT GE21</option>
+                <option>DUT STID</option>
+                <option>DUT autre</option>
+                <option>Prépa scientifique</option>
+                <option>Prépa B/L</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="nom">Validations ?</label>
+            <div class="checkbox">
+                <label for="st07">
+                    <input name="st07" checked type="checkbox" class="" id="st07"> ST07
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label for="st09">
+                    <input name="st09" type="checkbox" class="" id="st09"> ST09
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label for="st10">
+                    <input name="st10" type="checkbox" class="disabled" id="st10" disabled> ST10 (désactivté)
+                </label>
+            </div>
+
+            <div class="checkbox disabled">
+                <label for="se" class="disabled">
+                    <input name="se" type="checkbox" class="disabled" id="se"> SE
+                </label>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="modules">Modules ?</label>
+            <select size="9" multiple name="modules[]" id="modules" class="form-control">
+                <optgroup label="CS">
+                    <option selected>GL02</option>
+                    <option>NF16</option>
+                    <option>NF20</option>
+                </optgroup>
+                <optgroup label="TM">
+                    <option selected>IF09</option>
+                    <option>IF14</option>
+                    <option>LO02</option>
+                    <option>NF21</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="infos">Informations complémentaires</label>
+            <textarea class="form-control rounded-0" name="infos" id="infos" cols="30" rows="3">
+                Bonjour !
+                </textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit form</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -26,7 +26,6 @@
   </script>
 
   <?php
-
     //exo 2
     $nom = "Plantier";
     $prenom = "Clément";
