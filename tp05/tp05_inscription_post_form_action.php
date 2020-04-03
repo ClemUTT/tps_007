@@ -20,10 +20,6 @@
     </div>
     <?php
 
-    // exercice 3.5 : dans l'url il n'y a pas les valeurs des champs entrés par l'utilisateur
-    /* exercice 3.6 : Il faut utiliser POST lorsque l'on veut gérer un grand volume de données (ex : l'envoi de fichiers...). En effet, le nombre de caractère dans une URL est limité.
-    C'est également recommendé lorsque l'utilisateur rentre un mot de passe ou autres données sensibles*/
-
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];

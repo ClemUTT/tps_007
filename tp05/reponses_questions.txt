@@ -1,0 +1,26 @@
+Exercice 2 :
+2.7 : les valeurs transmises via le forumlaire sont concaténées dans le formulaire avec des & et clé=valeur
+
+2.8 : php considère que la valeur est vide (ex : prenom=)
+
+2.9 :
+    - Il faut ajouter ces crochets [] à la fin de la valeur de l'attribut name pour que les différentes valeurs soient mises dans un tableau (ex : name="modules[]")
+    - On les récupère comme si on considérait que ces valeurs étaient dans un tableau, donc on fait un foreach sur ce tableau pour traiter chaque valeur de ce tableau.
+
+2.10 :
+http://localhost/lo07_tp/tp05/tp05_analyse_formulaire.php?nom=Plantier&prenom=Cl%C3%A9ment&email=clement.plantier%40utt.fr&ddn=1999-10-08&sexe=M&origine=TC+de+l%27UTT&st07=on&modules%5B%5D=GL02&modules%5B%5D=IF09&infos=++++++++++++++++Bonjour+%21%0D%0A++++++++++++++++
+On peut par exemple modifier le nom, qui est ici égale à "Plantier", en le remplaçant par "x" par exemple dans l'URL.
+http://localhost/lo07_tp/tp05/tp05_analyse_formulaire.php?nom=x&prenom=Cl%C3%A9ment&email=clement.plantier%40utt.fr&ddn=1999-10-08&sexe=M&origine=TC+de+l%27UTT&st07=on&modules%5B%5D=GL02&modules%5B%5D=IF09&infos=++++++++++++++++Bonjour+%21%0D%0A++++++++++++++++
+le nom a désormais pour valeur "x" et il suffit de renvoyer cette URL pour que php traite toutes ces données avec la valeur du nom changée.
+
+2.11 : Lorsqu'un élément html n'a pas d'attribut name dans un formulaire, la valeur de cet élémént ne sera alors pas incluse dans les variables superglobales $_GET ou $_POST, elle ne sera pas prise en compte lors de l'envoi.
+       Si on essaie, dans un script php, de récupérer la valeur d'un élément html qui n'a pas de name (ex : $_GET["nameinexistant"]) php génerera alors une erreur d'indexation.
+       Toutefois, avant d'envoyer les données du formulaire, on peut insérer dans l'URL une clé=valeur qui est inexistante dans le formulaire dont la clé n'a pas de name associé à un élément html du formulaire.
+       php ne vérifie pas si chaque clé=valeur qu'on lui envoie fait partie du formulaire en lui-même.
+
+
+Exercice 3 :
+3.5 : La méthode GET affiche les valeurs que l'utilisateur a fournies dans l'ULR tandis que la méthode POST n'affiche pas les valeurs fournies par l'utilisateur dans l'URL.
+
+3.6 : Il faut utiliser POST lorsque l'on veut gérer un grand volume de données (ex : l'envoi de fichiers...). En effet, le nombre de caractère dans une URL est limité et c'est peut pratique.
+      Il est également recommendé d'utiliser la méthode POST lorsque l'utilisateur rentre un mot de passe ou autres données sensibles.
