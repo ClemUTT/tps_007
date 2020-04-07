@@ -16,7 +16,7 @@ le nom a désormais pour valeur "x" et il suffit de renvoyer cette URL pour que 
 2.11 : Lorsqu'un élément html n'a pas d'attribut name dans un formulaire, la valeur de cet élémént ne sera alors pas incluse dans les variables superglobales $_GET ou $_POST, elle ne sera pas prise en compte lors de l'envoi.
        Si on essaie, dans un script php, de récupérer la valeur d'un élément html qui n'a pas de name (ex : $_GET["nameinexistant"]) php génerera alors une erreur d'indexation.
        Toutefois, avant d'envoyer les données du formulaire, on peut insérer dans l'URL une clé=valeur qui est inexistante dans le formulaire dont la clé n'a pas de name associé à un élément html du formulaire.
-       php ne vérifie pas si chaque clé=valeur qu'on lui envoie fait partie du formulaire en lui-même.
+       php ne vérifie pas si chaque clé=valeur qu'on lui envoie fait partie du formulaire en lui-même ou non.
 
 
 Exercice 3 :
