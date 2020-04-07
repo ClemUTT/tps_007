@@ -7,7 +7,13 @@ function form_begin($class, $method, $action){
 function form_select($label, $name, $multiple, $size, $list){
     echo "<div class='form-group'>";
     echo "<label>$label</label>";
-    echo "<select class='form-control' name='$name' multiple='$multiple' size='$size'>";
+    if($multiple == ""){
+        echo "<select class='form-control' name='$name' size='$size'>";
+    } else {
+        $name = $name.'[]';
+        echo "<select class='form-control' name='$name' multiple size='$size'>";
+    }
+
     foreach ($list as $value){
         echo "<option value='$value'>$value</option>";
     }
