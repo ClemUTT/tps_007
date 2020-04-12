@@ -1,0 +1,9 @@
+Exercice 3 :
+2) 
+Il existe 2 types d'entêtes HTTP : requête (pour le serveur) et réponse (pour le navigateur).
+Lors de la première requête, le navigateur envoie des entêtes HTTP (requêtes), et le serveur répond par des entêtes HTTP (réponses) contenant, entre autres, les données des cookies que le serveur indique au navigateur de retenir et de lui envoyer pour les prochaines requetes.
+Lors de la deuxième requête (rechargement de la page), le navigateur envoie des entêtes HTTP au serveur contenant les clés et valeurs des cookies reçues lors de la première requête, qui ont été mémorisées par le navigateur. Ainsi, le serveur pourra traiter ces données et par conséquent les afficher, si on le souhaite, dans le contenu HTML que l'on envoie au navigateur.
+En fait, la superglobale $_COOKIE récupère les données des cookies incluses dans les entêtes HTTP (requête), c'est pourquoi lors de la première requête du navigateur, ce dernier ne transmet aucune valeur de cookies au serveur dans ses entêtes HTTP, étant donné que ce cookie n'a pas encore été crée, donc $_COOKIE ne récupère rien la première fois.
+
+7)
+Ce script ne fonctionne pas car il faut définir les cookies avant d'écrire une seule ligne de code (html/php), c'est à dire tout en haut du fichier. En l'occurence ici, les cookies sont crées dans le body.
