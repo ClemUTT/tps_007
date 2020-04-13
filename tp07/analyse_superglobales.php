@@ -46,14 +46,14 @@
 
     <div class="panel panel-danger">
         <div class="panel-heading">
-            Analyse de la superglobale $_COOKIE.
+            Superglobale COOKIE.
         </div>
         <div class="panel-body">
             <?php
 
-            echo "<table  style=\"background-color: lemonchiffon\" class='table table-striped'>";
+            echo "<table class='table table-striped'>";
             echo '<thead>';
-            echo '<tr><th>name</th><th>valeur {s}</th></tr>';
+            echo '<tr><th>name</th><th>valeur(s)</th></tr>';
             echo '</thead>';
             echo '<tbody>';
             if(isset($_COOKIE)){
@@ -69,16 +69,16 @@
         </div>
     </div>
 
-    <div class="panel panel-success">
+    <div class="panel panel-danger">
         <div class="panel-heading">
-            Analyse de la superglobale $_SESSION.
+            Superglobale SESSION.
         </div>
         <div class="panel-body">
             <?php
 
-            echo "<table  style=\"background-color: lemonchiffon\" class='table table-striped'>";
+            echo "<table class='table table-striped'>";
             echo '<thead>';
-            echo '<tr><th>name</th><th>valeur {s}</th></tr>';
+            echo '<tr><th>name</th><th>valeur(s)</th></tr>';
             echo '</thead>';
             echo '<tbody>';
             session_start();
