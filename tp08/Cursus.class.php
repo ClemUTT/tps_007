@@ -12,7 +12,7 @@ class Cursus{
     }
 
     public function __toString(){
-        return implode(", ", $this->listeModules);
+        return sprintf("Ce cursus contient le(s) module(s) suivant(s) : <br/> %s", implode("<br/>", $this->listeModules));
     }
 
     public function affiche(){

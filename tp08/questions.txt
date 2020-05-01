@@ -1,0 +1,2 @@
+Exercice 3 :
+9) et 10) Le script fonctionnera avec une seule utilisation du formulaire. En effet, lors des prochaines utilisations du formulaires, le dernier module enregistré par l'utilisateur via le formulaire ne sera plus dans l'objet cursus car les données ne sont pas persistantes de pages en pages.

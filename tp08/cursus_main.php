@@ -7,17 +7,17 @@ echo Charte::html_head_bootstrap("Cursus main");
     echo "<h1>Définition des modules</h1>";
 
     $module1 = new Module("LO07", "Technologies du Web", "TM", 140);
-    echo "<p>Module(". $module1->__toString() .")</p>";
+    echo '<p>'. $module1->__toString() .'</p>';
     $module2 = new Module("LO09", "Construction d'applications réparties", "TM", 24);
-    echo "<p>Module(". $module2->__toString() .")</p>";
+    echo '<p>'. $module2->__toString() .'</p>';
 
     echo "<h1>Définition d'un cursus</h1>";
 
     $cursus = new Cursus();
     $cursus->addModule($module1);
-    echo "<p>addModule : Module(". $module1->__toString() .")</p>";
+    echo '<p>addModule : '. $module1->__toString() .'</p>';
     $cursus->addModule($module2);
-    echo "<p>addModule : Module(". $module2->__toString() .")</p>";
+    echo '<p>addModule : '. $module2->__toString() .'</p>';
 
     $cursus->affiche();
 

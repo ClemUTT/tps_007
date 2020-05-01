@@ -18,6 +18,9 @@
         }
         echo "</table>";
 
+        echo $module->createTable($module->getLabel()).'<br/>';
+        echo $module->sauveBDR($module->getLabel()).'<br/>';
+
         $module->pageFoot();
     } else {
         $module->pageKO();

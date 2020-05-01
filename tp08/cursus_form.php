@@ -9,6 +9,7 @@ echo Charte::html_head_bootstrap("Formulaire cursus");
         form_select("categorie", "categorie", "", 5, array("CS", "TM", "EC", "ME", "CT"));
         form_nombre("effectif", "effectif");
         form_input_submit("Envoyer");
+        form_input_reset("Reset");
         form_end();
 
 echo Charte::html_foot_bootstrap();

@@ -2,23 +2,19 @@
 session_start();
 require_once 'Cursus.class.php';
 class Cursus2{
-    private $listeModules = array();
+    private $listeModules;
 
     public function __construct(){
-        if(isset($_SESSION["cursus"])){
-            array_push($this->listeModules, $_SESSION["cursus"]);
-        } else {
-            
-        }
+        $this->listeModules = isset($_SESSION["cursus"]) ? $_SESSION["cursus"] : array();
     }
 
     public function addModule($module){
-        array_push($this->listeModules, $_SESSION["cursus"]);
-        $_SESSION["cursus"] = $module;
+        $this->listeModules[$module->getSigle()] = $module;
+        $_SESSION["cursus"] = $this->listeModules;
     }
 
     public function __toString(){
-        return implode(", ", $this->listeModules);
+       return sprintf("Ce cursus contient le(s) module(s) suivant(s) : <br/> %s", implode("<br/>", $this->listeModules));
     }
 
     public function affiche(){

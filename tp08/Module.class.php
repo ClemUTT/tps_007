@@ -62,7 +62,7 @@ class Module implements WebBean
 
     public function __toString()
     {
-        return implode(", ", array($this->sigle, $this->label, $this->categorie, $this->effectif));
+        return $this->getSigle() .' : = : Module('. implode(", ", array($this->sigle, $this->label, $this->categorie, $this->effectif)) .')';
     }
 
 
@@ -137,7 +137,7 @@ class Module implements WebBean
         $res .= "categorie in ('CS', 'TM, 'EC', 'ME', 'CT'), ";
         $res .= "label varchar(40) not null, ";
         $res .= "effectif integer, ";
-        $res .= "primary key(sigle));";
+        $res .= "primary key (sigle));";
         return $res;
     }
 }
