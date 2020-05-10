@@ -1,0 +1,9 @@
+2)
+1. Clés primaires :
+    - vin.id
+    - producteur.id
+    - (recolte.producteur_id, recolte.vin_id)
+
+    Clés étrangères :
+    - recolte.vin_id qui référence vin.id
+    - recolte.producteur_id qui référence producteur.id
