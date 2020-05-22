@@ -12,23 +12,23 @@
 
 <?php
 
-class t {
-    private $name = "toto";
-    private $age = 6;
-    public function __construct()
-    {
-    }
+
+
+try{
+    $bdd = new PDO('mysql:host=localhost;dbname=LO07_2020;character=utf8', 'phpmyadmin', 'root');
+} catch (PDOException $e){
+    echo "erreur !!!!!! <br/>";
+    printf("%s - %s<p/>\n", $e->getMessage(), $e->getCode());
 }
 
-$a = array();
-$b = array();
-$t = new t();
-array_push($b, $t);
-array_push($a, $b);
+try {
+    $requete5 = "select * from vinXYZ";
+    $statement5 = $bdd->query($requete5);
+} catch (PDOException $e){
+    echo "il y aerreur";
+}
 
-echo "<pre>";
-print_r($a);
-echo "</pre>";
+
 
 ?>
 
