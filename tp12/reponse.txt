@@ -1,0 +1,10 @@
+18)
+points positifs :
+Cette manière de procéder permet une meilleure maintenance du code, en terme d'ajouts et de modifications de fonctionnalités, plutôt qu'une programmation procédurale. Beaucoup de frameworks fondés sur cette pratique ont vu le jour et ont aidé énormément de développeurs à concevoir des sites web, avec notamment l'apparition des CMS (WordPress...).
+Le nommage des fichiers explicitant leurs contenus aide à s'organiser et à se repérer dans son code.
+
+points négatifs :
+Cependant, cette manière n'est pas optimale pour tous les cas. En effet, sur certaines pages on voudrait par exemple modifier le menu en rajoutant des fonctionnalités exclusives. Dans ce cas, la notion de fragment est limitée et il vaut mieux avoir recourt à la programmation orientée objet pour davantage de personnalisation (entre autre).
+Par ailleurs, on peut vite être dépassé par une abondance de fragments et donc de fichiers, le développeur peut rencontrer des difficultés à se retrouver parmi ses fragments et voir l'efficacité de cette pratique être remise en cause.
+
+Pour conclure, cette méthode est intéressante et peut être utile dans beaucoup de situations, à condition de connaître les limites de cette pratique, et d'en faire un bon usage.

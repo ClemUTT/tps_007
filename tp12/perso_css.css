@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: lemonchiffon;
+}
+
+.jumbotron{
+    background-color: plum;
+}

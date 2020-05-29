@@ -11,7 +11,7 @@ class Charte {
         $resultat .= " <head>\n";
         $resultat .= "  <meta charset='UTF-8'>\n";
         $resultat .= "  <meta name='viewport' content='width=device-width, initial-scale=1.0'>\n";
-        $resultat .= "  <link rel='stylesheet' href='bootstrap.css'/>\n";
+        $resultat .= "  <link rel='stylesheet' href='../tp12/bootstrap.css'/>\n";
         $resultat .= "  <title>$titre</title>\n";
         $resultat .= " </head>\n";
 
