@@ -1,7 +1,8 @@
 
 <!-- ----- debut Router1 -->
 <?php
-require ('../controller/ControllerVin.php');
+require('../controller/ControllerVin.php');
+require('../controller/ControllerProducteur.php');
 
 // --- récupération de l'action passée dans l'URL
 $query_string = $_SERVER['QUERY_STRING'];
@@ -14,6 +15,7 @@ parse_str($query_string, $param);
 $action = htmlspecialchars($param["action"]);
 
 // --- Liste des méthodes autorisées
+
 switch ($action) {
  case "vinReadAll" :
  case "vinReadOne" :
@@ -21,6 +23,14 @@ switch ($action) {
  case "vinCreate" :
  case "vinCreated" :
   ControllerVin::$action();
+  break;
+  case "producteurReadAll" :
+  case "producteurReadOne" :
+  case "producteurReadId" :
+  case "producteurCreate" :
+  case "producteurRegions" :
+  case "producteurCreated" :
+   ControllerProducteur::$action();
   break;
 
  // Tache par défaut

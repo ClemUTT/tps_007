@@ -12,23 +12,22 @@ require($root . '/app/view/fragment/fragmentCaveHeader.html');
     <!-- ===================================================== -->
     <?php
     if ($results) {
-        echo("<h3>Le nouveau vin a été ajouté </h3>");
+        echo("<h3>Le nouveau producteur a été ajouté </h3>");
         echo("<ul>");
         echo("<li>id = " . $results . "</li>");
-        echo("<li>cru = " . $_GET['cru'] . "</li>");
-        echo("<li>annee = " . $_GET['annee'] . "</li>");
-        echo("<li>degre = " . $_GET['degre'] . "</li>");
+        echo("<li>cru = " . $_GET['nom'] . "</li>");
+        echo("<li>annee = " . $_GET['prenom'] . "</li>");
+        echo("<li>degre = " . $_GET['region'] . "</li>");
         echo("</ul>");
     } else {
         echo("<h3>Problème d'insertion du Vin</h3>");
-        echo("id = " . $_GET['cru']);
+        echo("id = " . $_GET['nom']);
     }
 
     echo("</div>");
 
     include $root . '/app/view/fragment/fragmentCaveFooter.html';
     ?>
-    <!-- ----- fin viewInserted -->    
+    <!-- ----- fin viewInserted -->
 
-    
-    
+
