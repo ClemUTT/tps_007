@@ -3,6 +3,7 @@
 <?php
 require('../controller/ControllerVin.php');
 require('../controller/ControllerProducteur.php');
+require('../controller/ControllerDocumentation.php');
 
 // --- récupération de l'action passée dans l'URL
 $query_string = $_SERVER['QUERY_STRING'];
@@ -31,6 +32,9 @@ switch ($action) {
   case "producteurRegions" :
   case "producteurCreated" :
    ControllerProducteur::$action();
+  break;
+    case "mesPropositions" :
+     ControllerDocumentation::$action();
   break;
 
  // Tache par défaut
