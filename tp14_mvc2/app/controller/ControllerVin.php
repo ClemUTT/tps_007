@@ -26,18 +26,24 @@ class ControllerVin
         require($vue);
     }
 
+    public static function vinDeleted()
+    {
+
+        $results = ModelVin::delete(
+            htmlspecialchars($_GET['id'])
+        );
+        // ----- Construction chemin de la vue
+        include 'config.php';
+        $vue = $root . '/app/view/vin/viewDeleted.php';
+        require($vue);
+    }
+
     // Affiche un formulaire pour sélectionner un id qui existe
     public static function vinReadId($args)
     {
-        //$results = ModelVin::getAllId();
+        $results = ModelVin::getAllId();
 
         $target = $args['target'];
-        switch ($target) {
-            case 'vinDeleted' :
-                $results = ModelVin::delete($_GET['id']);
-            case 'vinReadOne':
-                $results = ModelVin::getAllId();
-        }
 
         // ----- Construction chemin de la vue
         include 'config.php';

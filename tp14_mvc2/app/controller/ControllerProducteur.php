@@ -24,9 +24,22 @@ class ControllerProducteur {
         require ($vue);
     }
 
+    public static function producteurDeleted()
+    {
+        $results = ModelProducteur::delete(
+            htmlspecialchars($_GET['id'])
+        );
+        // ----- Construction chemin de la vue
+        include 'config.php';
+        $vue = $root . '/app/view/producteur/viewDeleted.php';
+        require($vue);
+    }
+
     // Affiche un formulaire pour sélectionner un id qui existe
-    public static function producteurReadId() {
+    public static function producteurReadId($args) {
         $results = ModelProducteur::getAllId();
+
+        $target = $args['target'];
 
         // ----- Construction chemin de la vue
         include 'config.php';
