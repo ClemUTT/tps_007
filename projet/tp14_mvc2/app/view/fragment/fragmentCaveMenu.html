@@ -1,0 +1,60 @@
+
+<!-- ----- début fragmentCaveMenu -->
+
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="router2.php?action=CaveAccueil">PLANTIER Clément</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">VIN <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=vinReadAll">Liste des vins</a></li>
+          <li><a href="router2.php?action=vinReadId&target=vinReadOne">Sélection d'un vin par son id</a></li>
+          <li><a href="router2.php?action=vinCreate">Insertion d'un vin</a></li>
+          <li><a href="router2.php?action=vinReadId&target=vinDeleted">Suppression d'un vin par son id</a></li>
+        </ul>
+      </li>   
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
+           aria-haspopup="true" aria-expanded="false">PRODUCTEUR <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=producteurReadAll">Liste des producteurs</a></li>
+          <li><a href="router2.php?action=producteurReadId&target=producteurReadOne">Affichage d'un producteur par son id</a></li>
+          <li><a href="router2.php?action=producteurCreate">Insertion d'un producteur</a></li>
+          <li><a href="router2.php?action=producteurRegions">Liste sans doublons des régions</a></li>
+          <li><a href="router2.php?action=producteurReadId&target=producteurDeleted">Suppression d'un producteur</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">PROJET <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=recolteReadRegion&target=recolteBiggestProducteur">Plus grand producteur selon une région</a></li>
+<!--          select producteur.nom, producteur.id, sum(recolte.quantite) from producteur, recolte, vin where-->
+<!--          vin.id = recolte.vin_id and recolte.producteur_id = producteur.id and region='Alsace' and producteur.nom='Chmonfils' group by producteur.nom, producteur.id-->
+          <li><a href="router2.php?action=recolteOrderBy&target=recolteTotalQuantite">Quantité de vin produit par année</a></li>
+<!--          SELECT vin.annee, sum(recolte.quantite) FROM vin, recolte WHERE recolte.vin_id = vin.id group by vin.annee order by vin.annee desc-->
+          <li><a href="router2.php?action=recolteViewAll">Liste des récoltes</a></li>
+<!--          SELECT * FROM recolte-->
+          <li><a href="router2.php?action=recolteChoixProducteur&target=recolteReadRecolteProducteur">Choix des récoltes d'un producteur</a></li>
+<!--          SELECT recolte.vin_id, recolte.quantite FROM recolte, producteur WHERE recolte.producteur_id = producteur.id AND producteur.nom='Chmonfils'-->
+          <li><a href="router2.php?action=vinReadId&target=vinQuantite">Quantité totale d'un vin sélectionné</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+           aria-haspopup="true" aria-expanded="false">DOCUMENTATION <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="router2.php?action=mesPropositions">Mes propositions</a></li>
+          <li><a href="router2.php?action=monProjet">Mon projet</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ----- fin fragmentCaveMenu -->
+
