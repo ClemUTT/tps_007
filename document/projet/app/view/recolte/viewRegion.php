@@ -1,5 +1,4 @@
-
-<!-- ----- début viewId -->
+<!-- ----- début viewRegion -->
 <?php
 require ($root . '/app/view/fragment/fragmentCaveHeader.html');
 ?>
@@ -10,17 +9,16 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
     include $root . '/app/view/fragment/fragmentCaveMenu.html';
     include $root . '/app/view/fragment/fragmentCaveJumbotron.html';
 
-    // $results contient un tableau avec la liste des clés.
     ?>
 
     <form role="form" method='get' action='router2.php'>
         <div class="form-group">
             <input type="hidden" name='action' value='<?php echo ($target); ?>'>
-            <label for="order">Order par : </label> <select class="form-control" id='order' name='order' style="width: 100px">
+            <label for="region">région : </label> <select class="form-control" id='region' name='region' style="width: 100px">
                 <?php
-                    echo ("<option>annee</option>");
-                    echo ("<option>quantite</option>");
-
+                foreach ($results as $region) {
+                    echo ("<option>$region</option>");
+                }
                 ?>
             </select>
         </div>
@@ -32,4 +30,4 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
 
 <?php include $root . '/app/view/fragment/fragmentCaveFooter.html'; ?>
 
-<!-- ----- fin viewId -->
+<!-- ----- fin viewRegion -->

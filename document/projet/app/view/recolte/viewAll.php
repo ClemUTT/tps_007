@@ -1,5 +1,5 @@
 
-<!-- ----- début viewABiggestProducteur -->
+<!-- ----- début viewAll -->
 <?php
 
 require ($root . '/app/view/fragment/fragmentCaveHeader.html');
@@ -15,18 +15,15 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
     <table class = "table table-striped table-bordered">
         <thead>
         <tr>
-            <th scope = "col">Région sélectionnée</th>
-            <th scope = "col">Plus grand producteur</th>
-            <th scope = "col">somme des quantités produites</th>
+            <th scope = "col">producteur_id</th>
+            <th scope = "col">vin_id</th>
+            <th scope = "col">quantite</th>
         </tr>
         </thead>
         <tbody>
         <?php
         foreach ($results as $element) {
-           // echo '<pre>';
-           // print_r($element);
-           // echo '</pre>';
-            printf("<tr><td>%s</td></td><td>%s</td><td>%d</td></tr>", $element->getRegion(), $element->getNom(), $element->getQuantite());
+            printf("<tr><td>%d</td><td>%d</td><td>%d</td></tr>", $element->getId(), $element->getVinId(), $element->getQuantite());
         }
         ?>
         </tbody>
@@ -34,4 +31,4 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
 </div>
 <?php include $root . '/app/view/fragment/fragmentCaveFooter.html'; ?>
 
-<!-- ----- fin viewABiggestProducteur -->
+<!-- ----- fin viewAll -->

@@ -1,4 +1,4 @@
-<!-- ----- debut Router1 -->
+<!-- ----- debut Router2 -->
 <?php
 require('../controller/ControllerVin.php');
 require('../controller/ControllerProducteur.php');
@@ -61,5 +61,5 @@ switch ($action) {
         ControllerVin::$action();
 }
 ?>
-<!-- ----- Fin Router1 -->
+<!-- ----- Fin Router2 -->
 

@@ -1,4 +1,4 @@
-<!-- ----- debut ModelProducteur -->
+<!-- ----- debut ModelRecolte-->
 <?php
 require_once 'Model.php';
 
@@ -19,6 +19,7 @@ class ModelRecolte
         }
     }
 
+    // Récupère la quantité du vin avec l'id $id
     public static function getVinQuantite($id){
         try {
             $database = Model::getInstance();
@@ -36,6 +37,7 @@ class ModelRecolte
         }
     }
 
+    //Récupère tous les producteurs qui ont une relation avec la table Récolte
     public static function getAllProducteur(){
         try {
             $database = Model::getInstance();
@@ -50,11 +52,10 @@ class ModelRecolte
         }
     }
 
+    //Récupère
     public static function getRecolteProducteur($id){
         try {
             $database = Model::getInstance();
-//            $query = "SELECT producteur.nom as nom, producteur.id as id, recolte.vin_id as vinId, recolte.quantite as quantite
-//                      FROM recolte, producteur WHERE id =:id AND recolte.producteur_id = :id";
             $query = "SELECT producteur.nom as nom, producteur.id as id, recolte.vin_id as vinId, recolte.quantite as quantite FROM recolte, vin, producteur WHERE producteur.id = :id and recolte.vin_id = vin.id and recolte.producteur_id = producteur.id";
             $statement = $database->prepare($query);
             $statement->execute([
@@ -120,7 +121,7 @@ class ModelRecolte
         }
     }
 
-
+    //Récupère la quantité de vin selon l'ordre passé en paramètre
     public static function getTotalQuantite($order)
     {
         try {
@@ -266,4 +267,4 @@ class ModelRecolte
 }
 
 ?>
-<!-- ----- fin ModelProducteur -->
+<!-- ----- fin ModelRecolte -->

@@ -4,14 +4,6 @@
 require_once '../model/ModelProducteur.php';
 
 class ControllerProducteur {
-    // --- page d'acceuil
-    public static function caveAccueil() {
-        include 'config.php';
-        $vue = $root . '/app/view/viewCaveAccueil.html';
-        if (DEBUG)
-            echo ("ControllerProducteur : caveAccueil : vue = $vue");
-        require ($vue);
-    }
 
     // --- Liste des producteurs
     public static function producteurReadAll() {
@@ -24,6 +16,7 @@ class ControllerProducteur {
         require ($vue);
     }
 
+    // Supprime un producteur
     public static function producteurDeleted()
     {
         $results = ModelProducteur::delete(
@@ -78,7 +71,6 @@ class ControllerProducteur {
     }
 
     // Affiche un formulaire pour récupérer les informations d'un nouveau producteur.
-    // La clé est gérée par le systeme et pas par l'internaute
     public static function producteurCreated() {
         // ajouter une validation des informations du formulaire
         $results = ModelProducteur::insert(

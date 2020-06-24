@@ -1,5 +1,5 @@
 
-<!-- ----- début viewABiggestProducteur -->
+<!-- ----- début viewTotalQuantite -->
 <?php
 
 require ($root . '/app/view/fragment/fragmentCaveHeader.html');
@@ -24,13 +24,10 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
         foreach ($results as $element) {
             printf("<tr><td>%d</td></td><td>%d</td></tr>", $element->getAnnee(), $element->getQuantite());
         }
-//        echo '<pre>';
-//        print_r($results);
-//        echo '</pre>';
         ?>
         </tbody>
     </table>
 </div>
 <?php include $root . '/app/view/fragment/fragmentCaveFooter.html'; ?>
 
-<!-- ----- fin viewABiggestProducteur -->
+<!-- ----- fin viewTotalQuantite -->

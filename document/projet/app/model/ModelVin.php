@@ -24,9 +24,6 @@ class ModelVin
         try {
             $database = Model::getInstance();
 
-//            $query = "delete from recolte where recolte.vin_id=$id";
-//            $statement = $database->prepare($query);
-//            $statement->execute();
 
             $query = "delete from vin where vin.id=$id";
             $statement = $database->prepare($query);

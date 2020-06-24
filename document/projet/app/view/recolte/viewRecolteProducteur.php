@@ -22,9 +22,7 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
         </thead>
         <tbody>
         <?php
-//                echo '<pre>';
-//                print_r($results);
-//                echo '</pre>';
+
         if($results==-1) echo "<h3>Ce producteur n'a rien produit</h3>";
         else
         foreach ($results as $element) {

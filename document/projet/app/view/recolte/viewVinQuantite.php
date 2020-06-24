@@ -1,5 +1,5 @@
 
-<!-- ----- début viewAll -->
+<!-- ----- début viewVinQuantite -->
 <?php
 
 require ($root . '/app/view/fragment/fragmentCaveHeader.html');
@@ -15,18 +15,14 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
     <table class = "table table-striped table-bordered">
         <thead>
         <tr>
-            <th scope = "col">producteur_id</th>
-            <th scope = "col">vin_id</th>
-            <th scope = "col">quantite</th>
+            <th scope = "col">Vin Id</th>
+            <th scope = "col">Quantité produite au total</th>
         </tr>
         </thead>
         <tbody>
         <?php
-//        echo '<pre>';
-//        print_r($results);
-//        echo '</pre>';
         foreach ($results as $element) {
-            printf("<tr><td>%d</td><td>%d</td><td>%d</td></tr>", $element->getId(), $element->getVinId(), $element->getQuantite());
+            printf("<tr><td>%d</td></td><td>%s</td></tr>", $element->getVinId(), $element->getQuantite());
         }
         ?>
         </tbody>
@@ -34,4 +30,4 @@ require ($root . '/app/view/fragment/fragmentCaveHeader.html');
 </div>
 <?php include $root . '/app/view/fragment/fragmentCaveFooter.html'; ?>
 
-<!-- ----- fin viewAll -->
+<!-- ----- fin viewVinQuantite -->

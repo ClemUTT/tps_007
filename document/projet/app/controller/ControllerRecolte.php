@@ -4,16 +4,8 @@ require_once '../model/ModelRecolte.php';
 
 class ControllerRecolte
 {
-    // --- page d'acceuil
-    public static function caveAccueil()
-    {
-        include 'config.php';
-        $vue = $root . '/app/view/viewCaveAccueil.html';
-        if (DEBUG)
-            echo("ControllerProducteur : caveAccueil : vue = $vue");
-        require($vue);
-    }
 
+    //Liste la quantité totale par vin
     public static function vinQuantite(){
         $id = $_GET['id'];
         $results = ModelRecolte::getVinQuantite($id);
@@ -23,6 +15,7 @@ class ControllerRecolte
         require($vue);
     }
 
+    //liste tous les producteurs
     public static function recolteChoixProducteur($args){
         $target = $args['target'];
         $results = ModelRecolte::getAllProducteur();
@@ -31,6 +24,7 @@ class ControllerRecolte
         require($vue);
     }
 
+    //Liste des récoltes du producteur sélectionné par son id
     public static function recolteReadRecolteProducteur(){
         $id = $_GET['id'];
         $results = ModelRecolte::getRecolteProducteur($id);
@@ -43,6 +37,7 @@ class ControllerRecolte
         require($vue);
     }
 
+    //Liste de toute la table Récolte
     public static function recolteViewAll(){
         $results = ModelRecolte::getAllRecolte();
         include 'config.php';
@@ -61,6 +56,7 @@ class ControllerRecolte
         require($vue);
     }
 
+    //Donne le plus grand producteur de vin selon la région sélectionnée
     public static function recolteBiggestProducteur(){
         $region = $_GET['region'];
         $results = ModelRecolte::getBiggestProducteur($region);
@@ -71,7 +67,7 @@ class ControllerRecolte
         require($vue);
     }
 
-    // --- Liste des quantités de vin par année
+    // --- Liste des quantités de vin par année ou par quantité
     public static function recolteOrderBy($args){
         $target = $args['target'];
         include 'config.php';
@@ -79,6 +75,7 @@ class ControllerRecolte
         require($vue);
     }
 
+    //Liste des quantités de vin selon l'ordre choisi
     public static function recolteTotalQuantite(){
         $order = $_GET['order'];
         $results = ModelRecolte::getTotalQuantite($order);
